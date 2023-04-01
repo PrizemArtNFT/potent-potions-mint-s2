@@ -42,7 +42,7 @@
     "react-hot-toast": "^2.1.1",
     "react-spring": "^9.3.2",
     "unstated-next": "^1.1.0",
-    "use-wallet": "^0.13.0",
+    "use-wallet": "^0.13.6",
     "yarn": "^1.22.17"
   },
   "devDependencies": {
