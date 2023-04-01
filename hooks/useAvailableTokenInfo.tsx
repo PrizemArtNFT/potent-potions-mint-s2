@@ -1,9 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useContainer } from "unstated-next";
 import web3UserContainer from "./useWeb3User";
-import { toast } from "react-hot-toast";
-import { PotionLabV2 } from "../typechain";
-import { ethers } from "ethers";
 
 const useAvailableTokenInfo = () => {
   const [isLoading, setLoading] = useState(false);

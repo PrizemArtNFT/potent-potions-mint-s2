@@ -3,7 +3,6 @@ import "tailwindcss/tailwind.css";
 
 import type { AppProps } from "next/app";
 
-import { ThemeProvider } from "next-themes";
 import { UseWalletProvider } from "use-wallet";
 import Web3UserProvider from "../hooks/web3UserProvider";
 

@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { createContainer } from "unstated-next";
 import { Web3Provider } from "@ethersproject/providers";
-import { ethers, Contract } from "ethers";
+import { providers, Contract } from "ethers";
+
 import { useWallet } from "use-wallet";
 import PotionLabV2 from "../artifacts/contracts/s2/PotionLabV2.sol/PotionLabV2.json";
 import { CONTRACT_ADDRESS } from "../helpers/config";
@@ -21,13 +22,13 @@ const Web3UserState = () => {
     }
 
     async function initializeData(address: string) {
-      const provider = new ethers.providers.Web3Provider(ethereum);
+      const provider = new providers.Web3Provider(ethereum);
       setProvider(provider);
 
       if (!CONTRACT_ADDRESS)
         return console.error("Could not find contract address");
 
-      const contract = new ethers.Contract(
+      const contract = new Contract(
         CONTRACT_ADDRESS,
         PotionLabV2.abi,
         provider,

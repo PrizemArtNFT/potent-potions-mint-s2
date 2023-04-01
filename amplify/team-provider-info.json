@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-potentpotionsmint-dev-142945-authRole",
+      "UnauthRoleArn": "arn:aws:iam::969998624927:role/amplify-potentpotionsmint-dev-142945-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::969998624927:role/amplify-potentpotionsmint-dev-142945-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-potentpotionsmint-dev-142945-deployment",
+      "UnauthRoleName": "amplify-potentpotionsmint-dev-142945-unauthRole",
+      "StackName": "amplify-potentpotionsmint-dev-142945",
+      "StackId": "arn:aws:cloudformation:us-west-2:969998624927:stack/amplify-potentpotionsmint-dev-142945/53c8dbf0-d0d4-11ed-8d1c-06574587b477",
+      "AmplifyAppId": "d2q18bzahmaq3e"
+    }
+  }
+}

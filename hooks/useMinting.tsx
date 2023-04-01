@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useContainer } from "unstated-next";
 import web3UserContainer from "./useWeb3User";
 import { toast } from "react-hot-toast";

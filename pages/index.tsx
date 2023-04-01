@@ -1,9 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import { useWallet } from "use-wallet";
 import toast, { Toaster } from "react-hot-toast";
-import { useTransition, animated } from "react-spring";
 import Navbar from "../components/Navbar";
 import ChestCloseup from "../components/ChestCloseup";
 import { useEffect, useState } from "react";
