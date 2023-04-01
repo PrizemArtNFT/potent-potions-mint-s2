@@ -71,7 +71,7 @@ const Navbar = ({
           <div className="flex items-center justify-center space-x-2 md:justify-end">
             <div className="inline-flex items-center bg-gray-100 rounded-full dark:text-black">
               <a
-                href="https://megaretro.art"
+                href="https://potentpotions.world/"
                 target={"_blank"}
                 style={{ height: 36, width: 36 }}
                 rel="noreferrer"

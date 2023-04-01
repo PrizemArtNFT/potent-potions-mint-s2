@@ -4,7 +4,7 @@ export const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
 const DEV_NETWORK_ID = 137;
 export const NETWORK_ID = IS_PROD
-  ? process.env.NEXT_PUBLIC_NETWORK_ID
+  ? 137
   : DEV_NETWORK_ID;
 
 const DEV_CONTRACT_ADDRESS = "0x4d948dcb3d584f038f3f6ed03070ebdb165f879b";

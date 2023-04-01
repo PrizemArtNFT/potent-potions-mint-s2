@@ -22,7 +22,7 @@ const useAvailableTokenInfo = () => {
         } else {
           console.debug("fetching token availability for " + wallet.account);
           setAvailableTokenInfo({
-            supply: await contract.maxSupply(),
+            supply: await contract.totalSupply(),
             minted: await contract.currentId(),
           });
         }
