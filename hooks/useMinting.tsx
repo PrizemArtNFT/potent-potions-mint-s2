@@ -4,6 +4,7 @@ import web3UserContainer from "./useWeb3User";
 import { toast } from "react-hot-toast";
 import { ExternalLinkIcon } from "@heroicons/react/solid";
 import { NETWORKS, NETWORK_ID } from "../helpers/config";
+import { BigNumber } from "@ethersproject/bignumber";
 
 const useMinting = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -47,7 +48,8 @@ const useMinting = () => {
 
     try {
       const mintPrice = await contract.mintPrice();
-      const value = mintPrice.mul(amount).toHexString();
+      const bigNumMintPrice = BigNumber.from(mintPrice)
+      const value =  bigNumMintPrice.mul(amount).toHexString();
       const isVipMint = await contract.vipMints(account);
       const transaction = await contractWithSigner.mint(amount, merkleProof, {
         value: isVipMint ? 0 : value,

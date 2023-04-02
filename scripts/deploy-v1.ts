@@ -13,7 +13,7 @@ async function main() {
   const PotionLabV1 = await ethers.getContractFactory("PotionLabV1");
   const lab = await PotionLabV1.deploy();
 
-  console.info(`PotionLabV1 Contract: ${lab.address}`);
+  console.info(`PotionLabV1 Contract: ${lab.getAddress()}`);
 }
 
 main().catch((error) => {

@@ -10,7 +10,7 @@ async function main() {
   );
   const distributor = await RoyaltyDistributor.deploy();
 
-  console.info(`RoyaltyDistributor Contract: ${distributor.getAddress()}`);
+  console.info(`RoyaltyDistributor Contract: ${await distributor.getAddress()}`);
 }
 
 main().catch((error: any) => {

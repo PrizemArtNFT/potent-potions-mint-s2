@@ -6,7 +6,7 @@ import { Provider, Contract } from "ethers";
 import { useWallet } from "@react-w3/use-wallet";
 import PotionLabV2 from "../artifacts/contracts/s2/PotionLabV2.sol/PotionLabV2.json";
 import { CONTRACT_ADDRESS } from "../helpers/config";
-import { PotionLabV2 as PotionLabV2Contract } from "../typechain";
+import { PotionLabV2 as PotionLabV2Contract } from "../typechain-types";
 
 const Web3UserState = () => {
   const wallet = useWallet();

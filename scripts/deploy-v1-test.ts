@@ -13,7 +13,7 @@ async function main() {
   const TestERC1155 = await ethers.getContractFactory("TestERC1155");
   const test = await TestERC1155.deploy();
 
-  console.info(`TestERC1155 Contract: ${test.address}`);
+  console.info(`TestERC1155 Contract: ${await test.getAddress()}`);
 }
 
 main().catch((error) => {
