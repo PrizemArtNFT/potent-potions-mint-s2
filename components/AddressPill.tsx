@@ -1,4 +1,3 @@
-import Davatar from "@davatar/react";
 import { LogoutIcon } from "@heroicons/react/solid";
 import Button from "./Button";
 
