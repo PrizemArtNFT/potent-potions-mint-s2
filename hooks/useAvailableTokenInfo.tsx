@@ -17,10 +17,15 @@ const useAvailableTokenInfo = () => {
         if (!contract) {
           console.error(`provider or contract is unavailable.`);
         } else {
+          const supply = await contract.totalSupply();
+          const minted = await contract.currentId();
+          const supplyNum = Number(supply);
+          const mintedNum = Number(minted)
+          console.log('supply',supply, 'minted', minted)
           console.debug("fetching token availability for " + wallet.account);
           setAvailableTokenInfo({
-            supply: await contract.totalSupply(),
-            minted: await contract.currentId(),
+            supply:supplyNum,
+            minted:mintedNum
           });
         }
       }

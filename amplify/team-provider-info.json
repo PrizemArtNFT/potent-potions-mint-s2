@@ -10,6 +10,14 @@
       "StackName": "amplify-potentpotionsmint-dev-142945",
       "StackId": "arn:aws:cloudformation:us-west-2:969998624927:stack/amplify-potentpotionsmint-dev-142945/53c8dbf0-d0d4-11ed-8d1c-06574587b477",
       "AmplifyAppId": "d2q18bzahmaq3e"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2q18bzahmaq3e",
+          "type": "cicd"
+        }
+      }
     }
   }
 }

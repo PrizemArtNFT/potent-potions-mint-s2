@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { createContainer } from "unstated-next";
 import { Web3Provider } from "@ethersproject/providers";
-import { providers, Contract } from "ethers";
+import { Provider, Contract } from "ethers";
 
-import { useWallet } from "use-wallet";
+import { useWallet } from "@react-w3/use-wallet";
 import PotionLabV2 from "../artifacts/contracts/s2/PotionLabV2.sol/PotionLabV2.json";
 import { CONTRACT_ADDRESS } from "../helpers/config";
 import { PotionLabV2 as PotionLabV2Contract } from "../typechain";
@@ -22,7 +22,7 @@ const Web3UserState = () => {
     }
 
     async function initializeData(address: string) {
-      const provider = new providers.Web3Provider(ethereum);
+      const provider = new Web3Provider(ethereum);
       setProvider(provider);
 
       if (!CONTRACT_ADDRESS)

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import classnames from "classnames";
-import { utils } from "ethers";
+import { formatUnits } from "ethers";
 import { LogoutIcon } from "@heroicons/react/solid";
 
 import useWeb3Container from "../hooks/useWeb3User";
@@ -19,7 +19,7 @@ const Navbar = ({
   const { wallet, ensName } = useWeb3Container.useContainer();
   const { status, reset, account, balance } = wallet;
   const [connectModalIsOpen, setConnectModalIsOpen] = useState(false);
-  const formattedETH = parseFloat(utils.formatUnits(balance || 0)).toFixed(2);
+  const formattedETH = parseFloat(formatUnits(balance || 0)).toFixed(2);
 
   const handleConnect = (injectorId: string) => {
     if (injectorId === null) return;
