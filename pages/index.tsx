@@ -35,10 +35,12 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     if (status === "connected") {
-      fetch(`/api/whitelist?address=${wallet.account}`).then(async (res) => {
-        setMerkleProof(await res.json());
-        updateMintAvailable();
-      });
+      setMerkleProof([])
+      updateMintAvailable()
+      // fetch(`/api/whitelist?address=${wallet.account}`).then(async (res) => {
+      //   setMerkleProof(await res.json());
+      //   updateMintAvailable();
+      // });
     }
     setCloseup(available && closeUp);
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run hh:compile && next build",
+    "build": "npm run hh:compile && next build && next export",
     "start": "next start",
     "lint": "next lint",
     "hh:test": "hardhat test",
